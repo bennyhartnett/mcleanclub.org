@@ -30,11 +30,11 @@ a {
 
 .site-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(36px, 9vw, 112px);
+  grid-template-columns: 1fr;
   width: min(610px, calc(100% - 32px));
   margin: 0 auto;
   align-items: center;
+  justify-items: center;
 }
 
 .site-nav__link {
@@ -53,9 +53,7 @@ a {
 }
 
 .site-nav__link:focus-visible,
-.site-nav__link:hover,
-.contact-section a:focus-visible,
-.contact-section a:hover {
+.site-nav__link:hover {
   color: var(--gold);
   outline: none;
 }
@@ -96,7 +94,6 @@ h1 {
   font-size: 0.8125rem;
   font-weight: 700;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 
 main {
@@ -105,13 +102,11 @@ main {
   padding-bottom: 84px;
 }
 
-.content-section + .content-section,
-.contact-section {
+.content-section + .content-section {
   margin-top: 128px;
 }
 
-.content-section h2,
-.contact-section h2 {
+.content-section h2 {
   margin-bottom: 30px;
   color: var(--text);
   font-size: 1.875rem;
@@ -119,8 +114,7 @@ main {
   line-height: 1.15;
 }
 
-.content-section p,
-.contact-section p {
+.content-section p {
   max-width: 344px;
   margin: 0 auto;
   color: var(--text);
@@ -129,8 +123,7 @@ main {
   line-height: 1.32;
 }
 
-.content-section p + p,
-.contact-section p + p {
+.content-section p + p {
   margin-top: 24px;
 }
 
@@ -140,24 +133,10 @@ main {
   font-size: 0.8125rem;
   font-weight: 700;
   line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.contact-section {
-  padding-top: 48px;
-  border-top: 1px solid rgba(211, 161, 28, 0.26);
-}
-
-.contact-section a {
-  color: var(--gold);
-  text-decoration-color: rgba(211, 161, 28, 0.5);
-  text-underline-offset: 0.18em;
 }
 
 @media (max-width: 560px) {
   .site-nav {
-    gap: 8px;
     width: min(100%, calc(100% - 24px));
   }
 
@@ -172,8 +151,7 @@ main {
   }
 
   h1,
-  .content-section h2,
-  .contact-section h2 {
+  .content-section h2 {
     font-size: 1.625rem;
   }
 
@@ -181,8 +159,7 @@ main {
     margin-top: 88px;
   }
 
-  .content-section + .content-section,
-  .contact-section {
+  .content-section + .content-section {
     margin-top: 96px;
   }
 }
