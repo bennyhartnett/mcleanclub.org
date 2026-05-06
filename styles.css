@@ -1,5 +1,5 @@
 :root {
-  --background: #07111f;
+  --background: #08382a;
   --text: #fffdf8;
   --muted: #e8edf2;
   --gold: #d3a11c;
@@ -132,6 +132,16 @@ main {
 .content-section p + p,
 .contact-section p + p {
   margin-top: 24px;
+}
+
+.content-section__location {
+  margin-bottom: 28px;
+  color: var(--gold);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .contact-section {
