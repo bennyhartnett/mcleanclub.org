@@ -1,0 +1,45 @@
+# The McLean Club
+
+> The McLean Club is an invitation-oriented social and philanthropic club founded in 1998 in McLean, Virginia. Membership is intentionally limited to 35 members and is offered by invitation only. The Club is dedicated to friendship, service, and community engagement, and supports local causes through philanthropy.
+
+## Key facts
+
+- **Name:** The McLean Club
+- **Type:** Private social and philanthropic club (NGO / community organization)
+- **Founded:** 1998
+- **Location:** McLean, Virginia, United States (Fairfax County)
+- **Membership:** By invitation only; capped at 35 members
+- **Mission:** Foster friendship, service, and community engagement; support local causes through philanthropic work and social events
+- **Website:** https://mcleanclub.org/
+
+## What members do
+
+- Gather for social events that build friendship among neighbors in McLean.
+- Engage in philanthropy and charitable work supporting local causes.
+- Participate in civic involvement and community engagement in McLean, Virginia.
+
+## Pages
+
+- [Home](https://mcleanclub.org/): Overview of The McLean Club.
+- [About Us](https://mcleanclub.org/#about): Founding (1998), location, and membership policy.
+- [Our Mission](https://mcleanclub.org/#mission): Philanthropic and social purpose.
+
+## Frequently asked
+
+**Where is The McLean Club located?**
+McLean, Virginia, in Fairfax County, United States.
+
+**When was The McLean Club founded?**
+1998.
+
+**How does someone join The McLean Club?**
+Membership is by invitation only and is intentionally limited to 35 members.
+
+**What does The McLean Club do?**
+The Club brings members together for social events and philanthropic efforts that support local causes in the McLean community.
+
+## Canonical resources
+
+- Sitemap: https://mcleanclub.org/sitemap.xml
+- Robots: https://mcleanclub.org/robots.txt
+- Manifest: https://mcleanclub.org/manifest.webmanifest

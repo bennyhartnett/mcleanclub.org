@@ -1,0 +1,34 @@
+{
+  "name": "The McLean Club",
+  "short_name": "McLean Club",
+  "description": "Invitation-oriented social and philanthropic club in McLean, Virginia, founded in 1998.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "background_color": "#08382a",
+  "theme_color": "#08382a",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["lifestyle", "social", "nonprofit"],
+  "icons": [
+    {
+      "src": "/assets/mclean-club-crest.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/mclean-club-logo.png",
+      "sizes": "180x118",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/mclean-club-logo.png",
+      "sizes": "180x118",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

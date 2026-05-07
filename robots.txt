@@ -1,0 +1,56 @@
+# https://mcleanclub.org/robots.txt
+# The McLean Club — McLean, Virginia
+# Allow all reputable crawlers, including AI assistants that respect robots.txt.
+
+User-agent: *
+Allow: /
+Disallow:
+
+# AI / generative engine crawlers — explicitly allowed.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap
+Sitemap: https://mcleanclub.org/sitemap.xml
+
+# Host
+Host: mcleanclub.org

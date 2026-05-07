@@ -28,6 +28,24 @@ a {
   color: inherit;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 8px;
+  padding: 8px 12px;
+  background: var(--background);
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--rule);
+}
+
+.skip-link:focus-visible {
+  top: 8px;
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
 .site-nav {
   display: grid;
   grid-template-columns: 1fr;
