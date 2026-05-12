@@ -1,9 +1,20 @@
+@font-face {
+  font-family: "GrandSeikoGothicTrace";
+  src:
+    url("/assets/fonts/GrandSeikoGothicTrace-Regular.woff2") format("woff2"),
+    url("/assets/fonts/GrandSeikoGothicTrace-Regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --background: #08382a;
   --text: #fffdf8;
   --muted: #e8edf2;
   --gold: #d3a11c;
   --rule: rgba(211, 161, 28, 0.32);
+  --accent-font: "GrandSeikoGothicTrace", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -57,6 +68,17 @@ a {
 .site-nav__link:hover {
   color: var(--gold);
   outline: none;
+}
+
+.site-nav__link:focus-visible,
+.site-nav__link:hover,
+.masthead__kicker,
+.content-list strong,
+.calendar-year h3,
+.event-date,
+.content-section__location {
+  font-family: var(--accent-font);
+  font-weight: 400;
 }
 
 .masthead {
