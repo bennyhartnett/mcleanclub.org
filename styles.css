@@ -30,8 +30,9 @@ a {
 
 .site-nav {
   display: grid;
-  grid-template-columns: 1fr;
-  width: min(610px, calc(100% - 32px));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  width: min(780px, calc(100% - 32px));
   margin: 0 auto;
   align-items: center;
   justify-items: center;
@@ -127,6 +128,80 @@ main {
   margin-top: 24px;
 }
 
+.page-main {
+  width: min(720px, calc(100% - 40px));
+}
+
+.page-main .content-section p {
+  max-width: 560px;
+}
+
+.content-list,
+.calendar-archive,
+.event-months {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content-list {
+  display: grid;
+  gap: 18px;
+  width: min(520px, 100%);
+  margin: 32px auto 0;
+  text-align: left;
+}
+
+.content-list li {
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.content-list strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--gold);
+}
+
+.calendar-archive {
+  display: grid;
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.calendar-year {
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+  text-align: left;
+}
+
+.calendar-year h3 {
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+.event-months {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.event-months li {
+  border: 1px solid rgba(255, 253, 248, 0.28);
+  padding: 8px 6px;
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
 .content-section__location {
   margin-bottom: 28px;
   color: var(--gold);
@@ -137,6 +212,8 @@ main {
 
 @media (max-width: 560px) {
   .site-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
     width: min(100%, calc(100% - 24px));
   }
 
@@ -161,5 +238,9 @@ main {
 
   .content-section + .content-section {
     margin-top: 96px;
+  }
+
+  .event-months {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
