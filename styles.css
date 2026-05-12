@@ -138,7 +138,7 @@ main {
 
 .content-list,
 .calendar-archive,
-.event-months {
+.event-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -186,20 +186,37 @@ main {
   line-height: 1.2;
 }
 
-.event-months {
+.event-list {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 8px;
+  gap: 10px;
 }
 
-.event-months li {
+.event-list li {
+  display: grid;
+  grid-template-columns: minmax(132px, 0.44fr) minmax(0, 1fr);
+  gap: 14px;
   border: 1px solid rgba(255, 253, 248, 0.28);
-  padding: 8px 6px;
+  padding: 11px 12px;
   color: var(--text);
-  font-size: 0.8125rem;
   font-weight: 700;
-  line-height: 1;
-  text-align: center;
+  line-height: 1.25;
+}
+
+.event-date {
+  color: var(--gold);
+  font-size: 0.875rem;
+}
+
+.event-title {
+  display: block;
+  font-size: 0.9375rem;
+}
+
+.event-location {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.8125rem;
 }
 
 .content-section__location {
@@ -240,7 +257,8 @@ main {
     margin-top: 96px;
   }
 
-  .event-months {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .event-list li {
+    grid-template-columns: 1fr;
+    gap: 5px;
   }
 }
