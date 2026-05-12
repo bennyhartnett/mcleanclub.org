@@ -1,6 +1,8 @@
 (() => {
   const startYear = 2009;
   const endYear = Math.max(2026, new Date().getFullYear());
+  const excludedStartDate = new Date(2020, 2, 1, 0, 0, 0);
+  const excludedEndDate = new Date(2021, 4, 31, 23, 59, 59);
   const archive = document.querySelector("[data-calendar-archive]");
 
   if (!archive) {
@@ -44,6 +46,13 @@
 
   const firstWeekdayOfMonth = (year, monthIndex, weekday) => {
     return nthWeekdayOfMonth(year, monthIndex, weekday, 1);
+  };
+
+  const overlapsExcludedWindow = (event) => {
+    const eventStartDate = event.startDate;
+    const eventEndDate = event.endDate || event.startDate;
+
+    return eventStartDate <= excludedEndDate && eventEndDate >= excludedStartDate;
   };
 
   const formatRange = (startDate, endDate) => {
@@ -129,6 +138,12 @@
   archive.textContent = "";
 
   for (let year = endYear; year >= startYear; year -= 1) {
+    const events = annualEvents(year).filter((event) => !overlapsExcludedWindow(event));
+
+    if (events.length === 0) {
+      continue;
+    }
+
     const item = document.createElement("li");
     const heading = document.createElement("h3");
     const list = document.createElement("ol");
@@ -137,7 +152,7 @@
     heading.textContent = year;
     list.className = "event-list";
 
-    annualEvents(year).forEach((event) => appendEvent(list, event));
+    events.forEach((event) => appendEvent(list, event));
 
     item.append(heading, list);
     archive.append(item);
