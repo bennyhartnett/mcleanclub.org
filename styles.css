@@ -1,8 +1,8 @@
 @font-face {
   font-family: "GrandSeikoGothicTrace";
   src:
-    url("/assets/fonts/GrandSeikoGothicTrace-Regular.woff2") format("woff2"),
-    url("/assets/fonts/GrandSeikoGothicTrace-Regular.woff") format("woff");
+    url("/assets/fonts/GrandSeikoGothicTrace-Regular-baseline-fixed.woff2") format("woff2"),
+    url("/assets/fonts/GrandSeikoGothicTrace-Regular-baseline-fixed.woff") format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
